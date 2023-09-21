@@ -1,0 +1,81 @@
+#section-seis{
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.section-seis-div-1 h2{
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.section-seis-div-2 p{
+    font-weight: 100;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.section-seis-div-3{
+    margin-top: 2%;
+    display: flex;
+    gap: 50px;
+}
+
+.box-div-3 a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: linear-gradient(to bottom, #4a3a75, #261f3d);
+    padding: 15px 15px;
+    border-radius: 5px;
+    width: 200px;
+    height: 50px;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    transition: transform 0.2s;
+}
+
+.box-div-3 a:hover{
+    transform: scale(1.1);
+}
+
+.box-div-3 p{
+    font-weight: 100
+}
+
+.box-div-3 span{
+    display: block;
+    font-weight: 400;
+}
+
+@media (max-width: 575px){
+    .section-seis-div-1 h2{
+        font-size: 2rem;
+    }
+
+    .section-seis-div-2 p{
+        font-size: 1rem;
+    }
+
+    .section-seis-div-3{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .box-div-3 a{
+        justify-content: center;
+        width: 150px;
+        height: 40px;
+    }
+    .box-div-3 img{
+        width: 25px;
+    }
+
+    .box-div-3 p{
+        font-size: 0.8rem;
+    }
+}

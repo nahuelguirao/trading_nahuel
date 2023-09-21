@@ -1,0 +1,78 @@
+#section-cuatro{
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+    justify-items: start;
+    margin: 0 auto;
+    width: 85%;
+}
+
+.section-cuatro-titulo{
+    text-align: center;
+    font-size: 1.5rem;
+    width: 100%;
+}
+
+.section-cuatro-titulo h2{
+    font-weight: 400;
+    opacity: 0.8;
+}
+
+.container-card-feedback{
+    display: flex;
+    align-items: stretch;
+    gap: 50px;
+    height: 80%;
+}
+
+.container-card-feedback-img{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.card-feedback{
+    background: linear-gradient(to bottom, #eeeeee42, #261f3d69);
+    padding: 10px 50px;
+    border-radius: 15px;
+    max-height: 100%;
+    transition: transform 0.3s;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+.card-feedback:hover{
+    transform: scale(1.1); 
+}
+
+.card-feedback p{
+    font-weight: 200;
+    text-align: start
+}
+
+#icono-3{
+    width: 100px;
+}
+
+@media (max-width: 1241px){
+    .section-cuatro-titulo{
+        position: relative;
+        top: 40%;
+    }
+
+    .container-card-feedback{
+        flex-direction: column;
+    }
+
+    .card-feedback p{
+        padding: 5px;
+        text-align: justify;
+    }
+}
+
+@media (max-width: 335px){
+    .card-feedback{
+        padding: 10px;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+}

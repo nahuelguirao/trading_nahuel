@@ -1,0 +1,51 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    background: linear-gradient(to right, #151938, #5A3C91);
+    background-size: 400% 400%;
+    color: white;
+    font-family: 'Kanit' , 'sans-seriff';
+    animation: cambiar-color 10s ease-in-out infinite;
+}
+
+.p-word{
+    color: #F75C9E;
+}
+
+.link-rosa:hover{
+    border: 2px solid white;
+    background-color: #F75C9E;
+}
+
+
+/* ANIMACIÓN DE CARGA FADE IN */
+@keyframes fade-in {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+/* CAMBIO SUTIL COLOR FONDO */
+@keyframes cambiar-color{
+    0%{
+        background-position: 30% 50%;
+    }
+    25%{
+        background-position: 50% 25%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    75%{
+        background-position: 50% 25%;
+    }
+    100%{
+        background-position: 30% 50%;
+    }
+}
