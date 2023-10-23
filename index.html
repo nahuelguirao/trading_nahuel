@@ -19,7 +19,8 @@
     <link rel="stylesheet" href="styles/6-section3.css">
     <!-- SECTION 4 -->
     <link rel="stylesheet" href="styles/7-section4.css">
-
+    <!-- SECTION 5  -->
+    <link rel="stylesheet" href="styles/8-section5.css">
     <!-- SECTION 6 -->
     <link rel="stylesheet" href="styles/9-section6.css">
     <!-- FOOTER -->
@@ -40,8 +41,7 @@
         <nav id="nav">
             <a href="#" class="link-rosa nav-link">Inicio</a>
             <a href="#link-empieza" class="link-rosa nav-link">Why us?</a>
-            <a href="#" class="link-rosa nav-link">FAQs</a>
-            <a href="#" class="link-rosa nav-link">Contact</a>
+            <a href="#link-faq" class="link-rosa nav-link">FAQs</a>
         </nav>
     </header>
     <!-- MAIN -->
@@ -51,7 +51,7 @@
             <p id="tradea">Tradea mas de 300 activos con nuestro broker!</p>
             <div class="container-a">
                 <a href="#" class="link-rosa" id="comienza">Comienza ahora</a>
-                <a href="#" class="link-rosa" id="mirar">▶️ Mirar video </a>
+                <a href="https://www.youtube.com/" target="_blank" class="link-rosa" id="mirar">▶️ Mirar video </a>
             </div>
             <h2 id="rating" class="p-word">Rating A+</h2>
             <p class="parrafo-estrellas" id="estrellas">Nuestros clientes nos valoran en promedio con 4 estrellas ⭐</p>
@@ -61,7 +61,7 @@
         </div>
     </main>
     <!-- SECTION 1 -->
-    <section class="section-1" id="section-1">
+    <section class="section-1">
         <div class="container-plataforma">
             <h2>Plataforma <span class="p-word">criptográfica</span> confiable</h2>
             <p>Somos el mejor lugar para que inicies tu carrera en el trading!</p>
@@ -201,9 +201,54 @@
             </div>
         </div>
     </section>
+    <!-- SECTION 5  -->
+    <section id="section-cinco">
+        <div class="section-cinco-izquierda">
+            <h2>¿Alguna <span class="p-word">pregunta</span>?</h2>
+            <p>Si tu pregunta no aparece aquí, contactanos...</p>
+            <button>Contacto</button>
+        </div>
+        <div class="section-cinco-derecha">
+            <div>
+                <p>¿Qué son las criptomonedas? </p>
+                <span class="p-word" id="flechita-1">🡣</span>
+                <p class="parrafo-desplegable" id="parrafo-1">
+                    Las criptomonedas son formas de moneda digital que utilizan criptografía para garantizar la
+                    seguridad
+                    de las transacciones y controlar la creación de nuevas unidades. No están respaldadas por ningún
+                    gobierno central y operan en una tecnología llamada "blockchain" o cadena de bloques. Ejemplos
+                    populares de criptomonedas incluyen Bitcoin, Ethereum y Litecoin.
+                </p>
+            </div>
+            <div>
+                <p>¿Son seguras las criptomonedas?</p>
+                <span class="p-word" id="flechita-2">🡣</span>
+                <p class="parrafo-desplegable" id="parrafo-2">
+                    Las criptomonedas son generalmente seguras debido a su tecnología de criptografía y su naturaleza
+                    descentralizada. Sin embargo, existen riesgos asociados con el almacenamiento y el uso de
+                    criptomonedas, como el robo de claves privadas, estafas y la volatilidad del mercado. Es esencial
+                    tomar medidas de seguridad, como el uso de carteras seguras y la autenticación de dos factores, para
+                    proteger sus activos criptográficos.
+                </p>
+            </div>
+            <div>
+                <p>¿Son anónimas las transacciones con criptomonedas? </p>
+                <span class="p-word" id="flechita-3">🡣</span>
+                <p class="parrafo-desplegable" id="parrafo-3">
+                    Aunque muchas personas asumen que las criptomonedas son completamente anónimas, no lo son
+                    necesariamente. Si bien las transacciones en la cadena de bloques no suelen estar vinculadas a
+                    nombres reales, son rastreables. Los registros de transacciones en la cadena de bloques son públicos
+                    y se pueden seguir hasta las direcciones de billetera. Sin embargo, algunas criptomonedas, como
+                    Monero y Zcash, están diseñadas para ofrecer un mayor nivel de privacidad y anonimato en las
+                    transacciones. Aun así, es importante recordar que la privacidad total no está garantizada, y se
+                    deben tomar precauciones adicionales si se desea un alto grado de anonimato al usar criptomonedas.
+                </p>
+            </div>
+        </div>
+    </section>
     <!-- FOOTER -->
     <footer>
-        <div class="footer-grid">
+        <div class="footer-grid" id="link-faq">
             <div class="footer-grid-element" id="newsletter">
                 <h4><span id="nahuel" class="p-word">Nahuel</span><span>Trading</span></h4>
                 <p>Regístrate en nuestro newsletter</p>
@@ -231,7 +276,9 @@
         </div>
     </footer>
     <!-- MENU DESPLEGABLE -->
-    <script src="menu.js"></script>
+    <script src="scripts/menu.js"></script>
+    <!-- PARRAFOS  -->
+    <script src="scripts/parrafo-desplegable.js"></script>
 </body>
 
 </html>
